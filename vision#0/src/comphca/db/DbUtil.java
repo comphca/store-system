@@ -29,10 +29,10 @@ public class DbUtil {
         }
     }
 
-    public static void main(String[] args) throws Exception {
+   /* public static void main(String[] args) throws Exception {
         DbUtil dbUtil = new DbUtil();
         dbUtil.getCon();
         System.out.println("lianjie success");
-    }
+    }*/
 
 }
