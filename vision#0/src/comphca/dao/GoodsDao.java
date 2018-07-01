@@ -7,7 +7,7 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
-
+//提交test
 public class GoodsDao {
 
     PreparedStatement pst = null;
@@ -36,9 +36,11 @@ public class GoodsDao {
         ResultSet rs = null;
         Connection con = null;
         con = JDBCUtil.getCon();
+
+        String sql = "insert into user values (?,?)";
         try {
-            pst = con.prepareStatement("insert into t_user (id,userName,password) values (5,?,?)");
-            pst.setObject(1,"nm1");
+            pst = con.prepareStatement(sql);
+            pst.setObject(1,"nm2");
             pst.setObject(2,"123");
             pst.execute();
         } catch (SQLException e) {

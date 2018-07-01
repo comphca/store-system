@@ -1,9 +1,8 @@
-package comphca.db;
+package comphca.utils;
 
 import java.sql.*;
 
 public class JDBCUtil {
-
     private static String user = "root";
     private static String passwd = "";
     private static String url = "jdbc:mysql://localhost:3306/usermanager";
@@ -26,7 +25,7 @@ public class JDBCUtil {
                 ps.close();
             }
         } catch (SQLException e) {
-                e.printStackTrace();
+            e.printStackTrace();
         }
 
         try {
